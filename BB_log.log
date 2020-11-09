@@ -201,3 +201,41 @@ TypeError: bad operand type for unary +: 'str'
 11.09.2020 14:50:41 goodbye ('127.0.0.1', 4061)
 11.09.2020 14:50:41 listener closed
 11.09.2020 14:50:41 server has terminated
+11.09.2020 15:03:43 goodbye ('127.0.0.1', 4292)
+11.09.2020 15:03:43 listener closed
+11.09.2020 15:03:43 server has terminated
+11.09.2020 15:03:59 Incoming message: Танго from: ID 591342003 Kathy @NoWord
+11.09.2020 15:04:06 User tries to add his name into the DB: /addID 591342003 @NoWord Kathy
+11.09.2020 15:04:07 Data inserted: User 591342003 @NoWord Kathy
+11.09.2020 15:04:11 Incoming message: Тел from: ID 591342003 Kathy @NoWord
+11.09.2020 15:05:52 goodbye ('127.0.0.1', 4296)
+11.09.2020 15:05:52 listener closed
+11.09.2020 15:05:52 server has terminated
+11.09.2020 15:08:10 goodbye ('127.0.0.1', 4313)
+11.09.2020 15:08:10 listener closed
+11.09.2020 15:08:10 server has terminated
+11.09.2020 15:08:18 Incoming message: Танго from: ID 591342003 Kathy @NoWord
+11.09.2020 15:09:30 goodbye ('127.0.0.1', 4388)
+11.09.2020 15:09:30 listener closed
+11.09.2020 15:09:30 server has terminated
+11.09.2020 15:11:45 User tries to add his name into the DB: /addID 362294998 @Akselept aksel
+11.09.2020 15:11:47 Data inserted: User 362294998 @Akselept aksel
+11.09.2020 15:12:43 Incoming message: Лабуда даби даби ду from: ID 362294998 aksel @Akselept
+11.09.2020 15:16:30 goodbye ('127.0.0.1', 4405)
+11.09.2020 15:16:30 listener closed
+11.09.2020 15:16:30 server has terminated
+11.09.2020 15:16:42 Incoming message: Какой то ш мае ее р роз from: ID 591342003 Kathy @NoWord
+11.09.2020 15:17:59 goodbye ('127.0.0.1', 4436)
+11.09.2020 15:17:59 listener closed
+11.09.2020 15:17:59 server has terminated
+11.09.2020 15:18:05 Incoming message: Ьирььщ from: ID 591342003 Kathy @NoWord
+11.09.2020 15:18:20 Incoming message: Рома from: ID 591342003 Kathy @NoWord
+11.09.2020 15:18:27 Incoming message: Ты это слышишь? from: ID 591342003 Kathy @NoWord
+11.09.2020 15:18:40 Incoming message: Птыщь бдыщь бдыщь from: ID 362294998 aksel @Akselept
+11.09.2020 15:18:58 Incoming message: ) from: ID 362294998 aksel @Akselept
+11.09.2020 15:19:03 Incoming message: Ок спс from: ID 591342003 Kathy @NoWord
+11.09.2020 15:20:57 goodbye ('127.0.0.1', 4447)
+11.09.2020 15:20:57 listener closed
+11.09.2020 15:20:57 server has terminated
+11.09.2020 15:21:05 Incoming message: Тест from: ID 591342003 Kathy @NoWord
+11.09.2020 15:21:29 Incoming message: Работат from: ID 362294998 aksel @Akselept

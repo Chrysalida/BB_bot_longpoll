@@ -79,7 +79,6 @@ def Add_handler(message):
     ibm_db.close(conn)
 
 
-
 @bot.message_handler(commands=['delete'])
 def delete_handler(message):
 
