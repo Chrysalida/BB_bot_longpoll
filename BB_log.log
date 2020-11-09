@@ -180,3 +180,24 @@ TypeError: bad operand type for unary +: 'str'
 11.09.2020 14:25:30 goodbye ('127.0.0.1', 3505)
 11.09.2020 14:25:30 listener closed
 11.09.2020 14:25:30 server has terminated
+11.09.2020 14:49:02 Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.09.2020 14:49:17 goodbye ('127.0.0.1', 4016)
+11.09.2020 14:49:17 listener closed
+11.09.2020 14:49:17 server has terminated
+11.09.2020 14:49:21 Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.09.2020 14:49:28 User tries to withdraw his name from the DB: /deleteID 591342003 @NoWord Kathy
+11.09.2020 14:49:30 Data deleted: User 591342003 @NoWord Kathy
+11.09.2020 14:49:33 User tries to withdraw his name from the DB: /deleteID 591342003 @NoWord Kathy
+11.09.2020 14:49:34 Data deleted: User 591342003 @NoWord Kathy
+11.09.2020 14:49:50 User tries to add his name into the DB: /addID 591342003 @NoWord Kathy
+11.09.2020 14:49:51 Data inserted: User 591342003 @NoWord Kathy
+11.09.2020 14:49:53 User tries to add his name into the DB: /addID 591342003 @NoWord Kathy
+11.09.2020 14:49:54 Data insertion failed: User 591342003 @NoWord Kathy
+11.09.2020 14:50:04 goodbye ('127.0.0.1', 4020)
+11.09.2020 14:50:04 listener closed
+11.09.2020 14:50:04 server has terminated
+11.09.2020 14:50:31 User tries to withdraw his name from the DB: /deleteID 591342003 @NoWord Kathy
+11.09.2020 14:50:32 Data deleted: User 591342003 @NoWord Kathy
+11.09.2020 14:50:41 goodbye ('127.0.0.1', 4061)
+11.09.2020 14:50:41 listener closed
+11.09.2020 14:50:41 server has terminated

@@ -32,7 +32,7 @@ def Start_handler(message):
             'Incoming message: '+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
             ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
 
-    bot.send_message(message.from_user.id,'Здравствуйте, {}! \n Вы нажали /start'.format(message.chat.first_name))
+    bot.send_message(message.from_user.id,'Здравствуйте, {}!\n Вы нажали /start'.format(message.chat.first_name))
     print('User {} pressed "/Start" '.format(message.chat.first_name))
 
 

@@ -1,7 +1,7 @@
 """THIS IS GENERAL VERSION
 """
 
-from config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, dsn_port, dsn_protocol
+from BB_config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, dsn_port, dsn_protocol
 import ibm_db
 
 
