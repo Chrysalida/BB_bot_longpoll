@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging as log
-from BB_config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, dsn_port, dsn_protocol, TOKEN
+from BB_config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, dsn_port, dsn_protocol, TOKEN, Logpath
 import ibm_db
 
 import telebot
@@ -10,7 +10,7 @@ bot = telebot.TeleBot(TOKEN)
 TABLENAME="BB_table" #"XXR30091.BB_TABLE"
 #my id = 591342003
 
-log.basicConfig(filename='C:\\Users\EKAU.STARSPB\Desktop\BolnichkaBot\Bot_log.log',level=log.INFO, format='%(asctime)s %(message)s', datefmt='%m.%d.%Y %H:%M:%S')
+log.basicConfig(filename=Logpath,level=log.INFO, format='%(asctime)s %(message)s', datefmt='%m.%d.%Y %H:%M:%S')
 
 dsn = (
     "DRIVER={0};"
@@ -33,7 +33,7 @@ def Start_handler(message):
             ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
 
     bot.send_message(message.from_user.id,'Здравствуйте, {}! \n Вы нажали /start'.format(message.chat.first_name))
-    print('User wrote: ',message.text)
+    print('User {} pressed "/Start" '.format(message.chat.first_name))
 
 
 @bot.message_handler(commands=['help'])
@@ -44,48 +44,71 @@ def Help_handler(message):
     HurricaneEmoji = u'\U0001F300'#works as model
 
     #bot.send_message(message.from_user.id,SadEmoji)
-    print('User asked me for help')
+    print('User {} asked me for help'.format(message.chat.first_name))
 
 
 @bot.message_handler(commands=['add'])
 def Add_handler(message):
-    log.info(
-            'Incoming message: '+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
-            ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
-
-    conn = ibm_db.connect(dsn, "", "")
-    print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
 
     user_id=str(message.from_user.id)
     username=str(message.from_user.username)
     user_firstname=str(message.from_user.first_name)
+
+    print('User {} tries to add his name into the DB'.format(user_firstname))
+    log.info(
+            'User tries to add his name into the DB: '+ str(message.text) + 'ID '+ user_id +
+            ' @' + username + ' '+ user_firstname)
+
+    conn = ibm_db.connect(dsn, "", "")
+    print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
+
+
 
     insertQuery = "insert into "+TABLENAME+" values ('"+user_id+"','"+username+"','"+user_firstname+"','','')"
     try:
         insertStmt = ibm_db.exec_immediate(conn, insertQuery)
         bot.send_message(message.from_user.id,'Отлично, {}! \n Вы успешно добавлены в базу'.format(message.chat.first_name))
         print ("Data inserted: User ",user_id,username,user_firstname)
-        log.info("Data inserted: User "+user_id+username+user_firstname)
+        log.info("Data inserted: User "+user_id+' @'+username+' '+user_firstname)
 
     except:
-        bot.send_message(message.from_user.id,'Вас не удалось добавить в базу. \n Возможно, вы в ней уже есть')
-        print ("Data insertion failed: User ",user_id,username,user_firstname)
-        log.info("Data insertion failed: User "+user_id+username+user_firstname)
+        bot.send_message(message.from_user.id,'Вас не удалось добавить в базу. \n Возможно, вы в ней уже есть.')
+        print ("Data insertion failed: User ",user_id,' @',username,user_firstname)
+        log.info("Data insertion failed: User "+user_id+' @'+username+' '+user_firstname)
 
     ibm_db.close(conn)
-    print('User {} tried to add his name into the DB and failed'.format(user_firstname))
 
 
 
-@bot.message_handler(commands=['help'])
-def Help_handler(message):
-    SadEmoji = u'\U0001F623'
-    bot.send_message(message.from_user.id,
-                    "Буду рад вам помочь, но пока не умею, извините "+SadEmoji)
-    HurricaneEmoji = u'\U0001F300'#works as model
+@bot.message_handler(commands=['delete'])
+def delete_handler(message):
 
-    #bot.send_message(message.from_user.id,SadEmoji)
-    print('User asked me for help')
+    user_id=str(message.from_user.id)
+    username=str(message.from_user.username)
+    user_firstname=str(message.from_user.first_name)
+
+    print('User {} tries to withdraw his name from the DB'.format(user_firstname))
+    log.info(
+            'User tries to withdraw his name from the DB: '+ str(message.text) + 'ID '+ user_id +
+            ' @' + username + ' '+ user_firstname)
+
+    conn = ibm_db.connect(dsn, "", "")
+    print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
+
+
+    DeleteQuery = "delete from "+TABLENAME+" WHERE id="+user_id
+    try:
+        DeleteStmt = ibm_db.exec_immediate(conn, DeleteQuery)
+        bot.send_message(message.from_user.id,'Вы удалили свое имя из списка. \n Уведомления больше не будут вам присылаться.'.format(message.chat.first_name))
+        print ("Data deleted: User ",user_id,username,user_firstname)
+        log.info("Data deleted: User "+user_id+' @'+username+' '+user_firstname)
+
+    except:
+        bot.send_message(message.from_user.id,'Удаления не получилось. \n Вы точно были в базе?')
+        print ("Data withdrawal failed: User ",user_id,' @',username,user_firstname)
+        log.info("Data withdrawal failed: User "+user_id+' @'+username+' '+user_firstname)
+
+    ibm_db.close(conn)
 
 
 

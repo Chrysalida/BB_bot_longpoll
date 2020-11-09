@@ -55,8 +55,8 @@ def Add_handler(message):
     user_firstname=str(message.from_user.first_name)
 
     log.info(
-            'Incoming message: '+ str(message.text) + ' from: ID '+ user_id +
-            ' ' + user_firstname + ' @' + username)
+            'User tries to add his name into the DB: '+ str(message.text) + 'ID '+ user_id +
+            ' @' + username + ' '+ user_firstname)
 
     conn = ibm_db.connect(dsn, "", "")
     print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
@@ -80,15 +80,36 @@ def Add_handler(message):
 
 
 
-@bot.message_handler(commands=['help'])
-def Help_handler(message):
-    SadEmoji = u'\U0001F623'
-    bot.send_message(message.from_user.id,
-                    "Буду рад вам помочь, но пока не умею, извините "+SadEmoji)
-    HurricaneEmoji = u'\U0001F300'#works as model
+@bot.message_handler(commands=['delete'])
+def delete_handler(message):
 
-    #bot.send_message(message.from_user.id,SadEmoji)
-    print('User asked me for help')
+    user_id=str(message.from_user.id)
+    username=str(message.from_user.username)
+    user_firstname=str(message.from_user.first_name)
+
+    log.info(
+            'User tries to withdraw his name from the DB: '+ str(message.text) + 'ID '+ user_id +
+            ' @' + username + ' '+ user_firstname)
+
+    conn = ibm_db.connect(dsn, "", "")
+    print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
+
+
+    DeleteQuery = "delete from "+TABLENAME+" WHERE id="+user_id
+    try:
+        DeleteStmt = ibm_db.exec_immediate(conn, DeleteQuery)
+        bot.send_message(message.from_user.id,'Вы удалили свое имя из списка. \n Уведомления больше не будут вам присылаться.'.format(message.chat.first_name))
+        print ("Data deleted: User ",user_id,username,user_firstname)
+        log.info("Data deleted: User "+user_id+' @'+username+' '+user_firstname)
+
+    except:
+        bot.send_message(message.from_user.id,'Вас не удалось добавить в базу. \n Возможно, вы в ней уже есть.')
+        print ("Data withdrawing failed: User ",user_id,' @',username,user_firstname)
+        log.info("Data withdrawing failed: User "+user_id+' @'+username+' '+user_firstname)
+
+    ibm_db.close(conn)
+    print('User {} tried to withdraw his name from the DB and failed'.format(user_firstname))
+
 
 
 

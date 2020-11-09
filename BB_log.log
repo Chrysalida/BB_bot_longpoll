@@ -161,3 +161,22 @@ TypeError: bad operand type for unary +: 'str'
 11.09.2020 13:27:02 Data insertion failed: User 591342003 @NoWord Kathy
 11.09.2020 13:28:13 Incoming message: /add from: ID 591342003 Kathy @NoWord
 11.09.2020 13:28:15 Data insertion failed: User 591342003 @NoWord Kathy
+11.09.2020 13:44:03 goodbye ('127.0.0.1', 2838)
+11.09.2020 13:44:03 listener closed
+11.09.2020 13:44:03 server has terminated
+11.09.2020 14:06:58 Incoming message: Hi from: ID 591342003 Kathy @NoWord
+11.09.2020 14:07:11 User tries to add his name into the DB: /addID 591342003 @NoWord Kathy
+11.09.2020 14:07:12 Data inserted: User 591342003 @NoWord Kathy
+11.09.2020 14:07:23 goodbye ('127.0.0.1', 3390)
+11.09.2020 14:07:23 listener closed
+11.09.2020 14:07:23 server has terminated
+11.09.2020 14:07:49 User tries to withdraw his name from the DB: /deleteID 591342003 @NoWord Kathy
+11.09.2020 14:07:50 Data deleted: User 591342003 @NoWord Kathy
+11.09.2020 14:14:58 goodbye ('127.0.0.1', 3402)
+11.09.2020 14:14:58 listener closed
+11.09.2020 14:14:58 server has terminated
+11.09.2020 14:19:04 Incoming message: Hi from: ID 591342003 Kathy @NoWord
+11.09.2020 14:19:13 Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.09.2020 14:25:30 goodbye ('127.0.0.1', 3505)
+11.09.2020 14:25:30 listener closed
+11.09.2020 14:25:30 server has terminated
