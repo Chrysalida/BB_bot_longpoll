@@ -10,7 +10,7 @@ bot = telebot.TeleBot(TOKEN)
 TABLENAME="BB_table" #"XXR30091.BB_TABLE"
 #my id = 591342003
 
-log.basicConfig(filename='C:\\Users\EKAU.STARSPB\Desktop\BolnichkaBot\Bot_log.log',level=log.INFO, format='%(asctime)s %(message)s', datefmt='%m.%d.%Y %H:%M:%S')
+log.basicConfig(filename='C:\\Users\EKAU.STARSPB\Desktop\BolnichkaBot\BB_log.log',level=log.INFO, format='%(asctime)s %(message)s', datefmt='%m.%d.%Y %H:%M:%S')
 
 dsn = (
     "DRIVER={0};"
@@ -33,7 +33,7 @@ def Start_handler(message):
             ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
 
     bot.send_message(message.from_user.id,'Здравствуйте, {}! \n Вы нажали /start'.format(message.chat.first_name))
-    print('User wrote: ',message.text)
+    print('User {} pressed "/Start" '.format(message.chat.first_name))
 
 
 @bot.message_handler(commands=['help'])
@@ -44,33 +44,36 @@ def Help_handler(message):
     HurricaneEmoji = u'\U0001F300'#works as model
 
     #bot.send_message(message.from_user.id,SadEmoji)
-    print('User asked me for help')
+    print('User {} asked me for help'.format(message.chat.first_name))
 
 
 @bot.message_handler(commands=['add'])
 def Add_handler(message):
-    log.info(
-            'Incoming message: '+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
-            ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
-
-    conn = ibm_db.connect(dsn, "", "")
-    print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
 
     user_id=str(message.from_user.id)
     username=str(message.from_user.username)
     user_firstname=str(message.from_user.first_name)
+
+    log.info(
+            'Incoming message: '+ str(message.text) + ' from: ID '+ user_id +
+            ' ' + user_firstname + ' @' + username)
+
+    conn = ibm_db.connect(dsn, "", "")
+    print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
+
+
 
     insertQuery = "insert into "+TABLENAME+" values ('"+user_id+"','"+username+"','"+user_firstname+"','','')"
     try:
         insertStmt = ibm_db.exec_immediate(conn, insertQuery)
         bot.send_message(message.from_user.id,'Отлично, {}! \n Вы успешно добавлены в базу'.format(message.chat.first_name))
         print ("Data inserted: User ",user_id,username,user_firstname)
-        log.info("Data inserted: User "+user_id+username+user_firstname)
+        log.info("Data inserted: User "+user_id+' @'+username+' '+user_firstname)
 
     except:
-        bot.send_message(message.from_user.id,'Вас не удалось добавить в базу. \n Возможно, вы в ней уже есть')
-        print ("Data insertion failed: User ",user_id,username,user_firstname)
-        log.info("Data insertion failed: User "+user_id+username+user_firstname)
+        bot.send_message(message.from_user.id,'Вас не удалось добавить в базу. \n Возможно, вы в ней уже есть.')
+        print ("Data insertion failed: User ",user_id,' @',username,user_firstname)
+        log.info("Data insertion failed: User "+user_id+' @'+username+' '+user_firstname)
 
     ibm_db.close(conn)
     print('User {} tried to add his name into the DB and failed'.format(user_firstname))

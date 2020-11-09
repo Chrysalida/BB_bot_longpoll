@@ -1,0 +1,163 @@
+11.06.2020 21:19:22 Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.06.2020 21:19:22 NameError occurred, args=("name 'Tra_list' is not defined",)
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\util.py", line 69, in run
+    task(*args, **kwargs)
+  File "C:\Users\EKAU.STARSPB\Desktop\BolnichkaBot\BB_bot.py", line 33, in get_text_messages
+    elif message.text in Tra_list: #Move out into a sep function
+NameError: name 'Tra_list' is not defined
+
+11.06.2020 21:19:44 goodbye ('127.0.0.1', 14937)
+11.06.2020 21:19:44 listener closed
+11.06.2020 21:19:44 server has terminated
+11.06.2020 21:19:50 Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.06.2020 21:19:53 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:24:53 goodbye ('127.0.0.1', 14943)
+11.06.2020 21:24:53 listener closed
+11.06.2020 21:24:53 server has terminated
+11.06.2020 21:24:55 Incoming message: [sad] from: ID 591342003 Kathy @NoWord
+11.06.2020 21:24:55 Incoming message: Smile from: ID 591342003 Kathy @NoWord
+11.06.2020 21:24:59 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:29:45 goodbye ('127.0.0.1', 14962)
+11.06.2020 21:29:45 listener closed
+11.06.2020 21:29:45 server has terminated
+11.06.2020 21:29:49 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:30:06 goodbye ('127.0.0.1', 14996)
+11.06.2020 21:30:06 listener closed
+11.06.2020 21:30:06 server has terminated
+11.06.2020 21:30:09 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:32:05 goodbye ('127.0.0.1', 1030)
+11.06.2020 21:32:05 listener closed
+11.06.2020 21:32:05 server has terminated
+11.06.2020 21:33:26 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:34:07 goodbye ('127.0.0.1', 1046)
+11.06.2020 21:34:07 listener closed
+11.06.2020 21:34:07 server has terminated
+11.06.2020 21:34:08 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:35:26 goodbye ('127.0.0.1', 1056)
+11.06.2020 21:35:26 listener closed
+11.06.2020 21:35:26 server has terminated
+11.06.2020 21:35:32 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:35:45 goodbye ('127.0.0.1', 1061)
+11.06.2020 21:35:45 listener closed
+11.06.2020 21:35:45 server has terminated
+11.06.2020 21:35:48 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:37:10 goodbye ('127.0.0.1', 1065)
+11.06.2020 21:37:10 listener closed
+11.06.2020 21:37:10 server has terminated
+11.06.2020 21:37:12 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:37:22 goodbye ('127.0.0.1', 1095)
+11.06.2020 21:37:22 listener closed
+11.06.2020 21:37:22 server has terminated
+11.06.2020 21:37:28 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.06.2020 21:38:49 Incoming message: Привет from: ID 591342003 Kathy @NoWord
+11.06.2020 21:39:17 goodbye ('127.0.0.1', 1099)
+11.06.2020 21:39:17 listener closed
+11.06.2020 21:39:17 server has terminated
+11.09.2020 11:22:11 Incoming message: /help from: ID 591342003 Kathy @NoWord
+11.09.2020 11:22:22 Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.09.2020 11:27:31 goodbye ('127.0.0.1', 1355)
+11.09.2020 11:27:31 listener closed
+11.09.2020 11:27:31 server has terminated
+11.09.2020 12:24:00 Incoming message: /Start from: ID 591342003 Kathy @NoWord
+11.09.2020 12:24:26 Incoming message: /add_me from: ID 591342003 Kathy @NoWord
+11.09.2020 12:24:26 NameError occurred, args=("name 'dsn' is not defined",)
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\util.py", line 69, in run
+    task(*args, **kwargs)
+  File "C:\Users\EKAU.STARSPB\Desktop\BolnichkaBot\Tesrt.py", line 33, in Add_me_handler
+    conn = ibm_db.connect(dsn, "", "")
+NameError: name 'dsn' is not defined
+
+11.09.2020 12:26:02 goodbye ('127.0.0.1', 2398)
+11.09.2020 12:26:02 listener closed
+11.09.2020 12:26:02 server has terminated
+11.09.2020 12:26:20 Incoming message: /add_me from: ID 591342003 Kathy @NoWord
+11.09.2020 12:26:46 goodbye ('127.0.0.1', 2430)
+11.09.2020 12:26:46 listener closed
+11.09.2020 12:26:46 server has terminated
+11.09.2020 12:26:51 Incoming message: /add_me from: ID 591342003 Kathy @NoWord
+11.09.2020 12:30:50 Incoming message: /start from: ID 362294998 aksel @Akselept
+11.09.2020 12:30:58 Incoming message: Привет from: ID 362294998 aksel @Akselept
+11.09.2020 12:31:16 Incoming message: /add_me from: ID 362294998 aksel @Akselept
+11.09.2020 13:07:58 goodbye ('127.0.0.1', 2438)
+11.09.2020 13:07:58 listener closed
+11.09.2020 13:07:58 server has terminated
+11.09.2020 13:08:37 Incoming message: /add_me from: ID 591342003 Kathy @NoWord
+11.09.2020 13:11:25 goodbye ('127.0.0.1', 2691)
+11.09.2020 13:11:25 listener closed
+11.09.2020 13:11:25 server has terminated
+11.09.2020 13:11:29 Incoming message: /add_me from: ID 591342003 Kathy @NoWord
+11.09.2020 13:11:36 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:11:38 TypeError occurred, args=("bad operand type for unary +: 'str'",)
+Traceback (most recent call last):
+  File "C:\Users\EKAU.STARSPB\Desktop\BolnichkaBot\Tesrt.py", line 53, in Add_handler
+    insertStmt = ibm_db.exec_immediate(conn, insertQuery)
+Exception: [IBM][CLI Driver][DB2/LINUXX8664] SQL0803N  One or more values in the INSERT statement, UPDATE statement, or foreign key update caused by a DELETE statement are not valid because the primary key, unique constraint or unique index identified by "1" constrains table "XXR30091.BB_TABLE" from having duplicate values for the index key.  SQLSTATE=23505 SQLCODE=-803
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\util.py", line 69, in run
+    task(*args, **kwargs)
+  File "C:\Users\EKAU.STARSPB\Desktop\BolnichkaBot\Tesrt.py", line 61, in Add_handler
+    log.info("Data insertion failed: User ",+user_id+username,+user_firstname)
+TypeError: bad operand type for unary +: 'str'
+
+11.09.2020 13:11:44 goodbye ('127.0.0.1', 2723)
+11.09.2020 13:11:44 listener closed
+11.09.2020 13:11:44 server has terminated
+11.09.2020 13:12:03 goodbye ('127.0.0.1', 2730)
+11.09.2020 13:12:03 listener closed
+11.09.2020 13:12:03 server has terminated
+11.09.2020 13:12:07 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:12:08 TypeError occurred, args=("bad operand type for unary +: 'str'",)
+Traceback (most recent call last):
+  File "C:\Users\EKAU.STARSPB\Desktop\BolnichkaBot\Tesrt.py", line 53, in Add_handler
+    insertStmt = ibm_db.exec_immediate(conn, insertQuery)
+Exception: [IBM][CLI Driver][DB2/LINUXX8664] SQL0803N  One or more values in the INSERT statement, UPDATE statement, or foreign key update caused by a DELETE statement are not valid because the primary key, unique constraint or unique index identified by "1" constrains table "XXR30091.BB_TABLE" from having duplicate values for the index key.  SQLSTATE=23505 SQLCODE=-803
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\util.py", line 69, in run
+    task(*args, **kwargs)
+  File "C:\Users\EKAU.STARSPB\Desktop\BolnichkaBot\Tesrt.py", line 61, in Add_handler
+    log.info("Data insertion failed: User "+user_id+username,+user_firstname)
+TypeError: bad operand type for unary +: 'str'
+
+11.09.2020 13:12:43 goodbye ('127.0.0.1', 2735)
+11.09.2020 13:12:43 listener closed
+11.09.2020 13:12:43 server has terminated
+11.09.2020 13:12:47 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:12:49 Data insertion failed: User 591342003NoWordKathy
+11.09.2020 13:17:47 goodbye ('127.0.0.1', 2743)
+11.09.2020 13:17:47 listener closed
+11.09.2020 13:17:47 server has terminated
+11.09.2020 13:17:53 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:17:54 Data insertion failed: User 591342003NoWordKathy
+11.09.2020 13:23:02 goodbye ('127.0.0.1', 2763)
+11.09.2020 13:23:02 listener closed
+11.09.2020 13:23:02 server has terminated
+11.09.2020 13:23:08 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:23:10 Data insertion failed: User 591342003NoWordKathy
+11.09.2020 13:24:11 goodbye ('127.0.0.1', 2791)
+11.09.2020 13:24:11 listener closed
+11.09.2020 13:24:11 server has terminated
+11.09.2020 13:24:19 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:24:21 Data insertion failed: User 591342003NoWordKathy
+11.09.2020 13:26:03 goodbye ('127.0.0.1', 2799)
+11.09.2020 13:26:03 listener closed
+11.09.2020 13:26:03 server has terminated
+11.09.2020 13:26:10 goodbye ('127.0.0.1', 2810)
+11.09.2020 13:26:10 listener closed
+11.09.2020 13:26:10 server has terminated
+11.09.2020 13:26:15 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:26:17 Data insertion failed: User 591342003NoWordKathy
+11.09.2020 13:26:58 goodbye ('127.0.0.1', 2814)
+11.09.2020 13:26:58 listener closed
+11.09.2020 13:26:58 server has terminated
+11.09.2020 13:27:01 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:27:02 Data insertion failed: User 591342003 @NoWord Kathy
+11.09.2020 13:28:13 Incoming message: /add from: ID 591342003 Kathy @NoWord
+11.09.2020 13:28:15 Data insertion failed: User 591342003 @NoWord Kathy
