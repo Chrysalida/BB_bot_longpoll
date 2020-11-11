@@ -4,6 +4,7 @@ from BB_config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, 
 import ibm_db
 
 import telebot
+from telebot import types
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -124,27 +125,48 @@ def get_text_messages(message):
 
 
     else:
-        try:
-            i=0
-            conn = ibm_db.connect(dsn, "", "")
-            print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
-            bot.send_message(message.from_user.id,"Рассылаю...")
+        #Buttons
+        keyboard=types.InlineKeyboardMarkup();
+        key_yes=types.InlineKeyboardButton(text="Да",callback_data='yes');
+        key_no=types.InlineKeyboardButton(text="Нет",callback_data='no');
+        keyboard.add(key_yes,key_no)
+        Confirm='Разослать это сообщение волонтерам Больнички?'
+        bot.send_message(message.from_user.id,text=Confirm, reply_markup=keyboard)
 
-            #Select all
-            selectQuery = "select * from "+TABLENAME
-            selectStmt = ibm_db.exec_immediate(conn, selectQuery)
 
-            while ibm_db.fetch_row(selectStmt) != False:
-                print (" ID:",  ibm_db.result(selectStmt, 0), " @username:",  ibm_db.result(selectStmt, "USERNAME"))
-                bot.send_message(ibm_db.result(selectStmt, 0),message.text)
-                i+=1
+        @bot.callback_query_handler(func=lambda call: True)
+        def callback_worker(call):
+            log.info('СТАРТ ВЫЗОВА')
+            log.info(call)
+            log.info('КОНЕЦ ВЫЗОВА')
+            if call.data=='yes':
 
-            bot.send_message(message.from_user.id,"Пользователей, получивших ваше оповещение: {}".format(i))
+                try:
+                    i=0
+                    conn = ibm_db.connect(dsn, "", "")
+                    print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
+                    bot.send_message(message.from_user.id,"Рассылаю...")
 
-        except:
-            print ("Unable to connect: ", ibm_db.conn_errormsg() )
+                    #Select all
+                    selectQuery = "select * from "+TABLENAME
+                    selectStmt = ibm_db.exec_immediate(conn, selectQuery)
 
-        ibm_db.close(conn)
-        print ("Connection closed")
+                    while ibm_db.fetch_row(selectStmt) != False:
+                        print (" ID:",  ibm_db.result(selectStmt, 0), " @username:",  ibm_db.result(selectStmt, "USERNAME"))
+                        bot.send_message(ibm_db.result(selectStmt, 0),mess)
+                        i+=1
+
+                    bot.send_message(message.from_user.id,"Пользователей, получивших ваше оповещение: {}".format(i))
+
+
+                except:
+                    print ("Unable to connect: ", ibm_db.conn_errormsg() )
+
+                ibm_db.close(conn)
+                print ("Connection closed")
+
+            else:
+                bot.send_message(message.from_user.id,"Хорошо, не буду")
+
 
 bot.polling(none_stop=True,interval=0)
