@@ -239,3 +239,19 @@ TypeError: bad operand type for unary +: 'str'
 11.09.2020 15:20:57 server has terminated
 11.09.2020 15:21:05 Incoming message: Тест from: ID 591342003 Kathy @NoWord
 11.09.2020 15:21:29 Incoming message: Работат from: ID 362294998 aksel @Akselept
+11.09.2020 16:18:47 goodbye ('127.0.0.1', 4492)
+11.09.2020 16:18:47 listener closed
+11.09.2020 16:18:47 server has terminated
+11.11.2020 11:35:32 Incoming message: Иногда from: ID 591342003 Kathy @NoWord
+11.11.2020 11:35:42 Incoming message: ) from: ID 362294998 aksel @Akselept
+11.11.2020 11:37:02 goodbye ('127.0.0.1', 3088)
+11.11.2020 11:37:02 listener closed
+11.11.2020 11:37:02 server has terminated
+11.11.2020 11:37:04 Incoming message: За ааа днадралач from: ID 591342003 Kathy @NoWord
+11.11.2020 11:37:17 goodbye ('127.0.0.1', 3119)
+11.11.2020 11:37:17 listener closed
+11.11.2020 11:37:17 server has terminated
+11.11.2020 11:37:22 Incoming message: Сдрвлесндс from: ID 591342003 Kathy @NoWord
+11.11.2020 11:40:43 goodbye ('127.0.0.1', 3126)
+11.11.2020 11:40:43 listener closed
+11.11.2020 11:40:43 server has terminated

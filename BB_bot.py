@@ -124,9 +124,27 @@ def get_text_messages(message):
 
 
     else:
-        bot.send_message(message.from_user.id,'Извините, {}! \n Я вас не понял'.format(message.chat.first_name))
-        bot.send_message(message.from_user.id,'Может быть, вы нажмете на /help ?')
-        print('User wrote: ',message.text)
+        try:
+            i=0
+            conn = ibm_db.connect(dsn, "", "")
+            print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
+            bot.send_message(message.from_user.id,"Рассылаю...")
 
+            #Select all
+            selectQuery = "select * from "+TABLENAME
+            selectStmt = ibm_db.exec_immediate(conn, selectQuery)
+
+            while ibm_db.fetch_row(selectStmt) != False:
+                print (" ID:",  ibm_db.result(selectStmt, 0), " @username:",  ibm_db.result(selectStmt, "USERNAME"))
+                bot.send_message(ibm_db.result(selectStmt, 0),message.text)
+                i+=1
+
+            bot.send_message(message.from_user.id,"Пользователей, получивших ваше оповещение: {}".format(i))
+
+        except:
+            print ("Unable to connect: ", ibm_db.conn_errormsg() )
+
+        ibm_db.close(conn)
+        print ("Connection closed")
 
 bot.polling(none_stop=True,interval=0)
