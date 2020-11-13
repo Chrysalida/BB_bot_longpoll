@@ -123,9 +123,16 @@ def get_text_messages(message):
     log.info(
             'Incoming message: '+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
             ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
+
+    print("INCOMING MESSAGE"+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
+            ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
     #mess=""
     global mess;
     mess = message.text
+    global author_id;
+    author_id = message.from_user.id
+    global username;
+    username = str(message.from_user.username )
 
 
     #Buttons
@@ -144,39 +151,33 @@ def get_text_messages(message):
         if call.data=='yes':
 
 
-#Рабочий блок на рассылку всем, кто есть в базе. Временно заменен на рассылку автору
+            try:
+                i=0
+                conn = ibm_db.connect(dsn, "", "")
+                print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
+                bot.send_message(author_id,"Рассылаю...")
 
-                bot.send_message(message.from_user.id,mess)
+                #Select all
+                selectQuery = "select * from "+TABLENAME
+                selectStmt = ibm_db.exec_immediate(conn, selectQuery)
 
-##                try:
-##                    i=0
-##                    conn = ibm_db.connect(dsn, "", "")
-##                    print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
-####                    #bot.send_message(message.from_user.id,"Рассылаю...")
-####                    #bot.send_message(message.from_user.id,'номер запроса: '+str(call.message.message_id))#итак, у сообщения-триггера номер - -1?
-####                    #bot.send_message(message.from_user.id,'Ищем '+str(call.message.message_id))message_id=call.message.message_id
-####                    #bot.getUpdates
-##
-##                    #Select all
-##                    selectQuery = "select * from "+TABLENAME
-##                    selectStmt = ibm_db.exec_immediate(conn, selectQuery)
-##
-##                    while ibm_db.fetch_row(selectStmt) != False:
-##                        print (" ID:",  ibm_db.result(selectStmt, 0), " @username:",  ibm_db.result(selectStmt, "USERNAME"))
-##                        bot.send_message(ibm_db.result(selectStmt, 0),mess2)
-##                        i+=1
-##
-##                    bot.send_message(message.from_user.id,"Пользователей, получивших ваше оповещение: {}".format(i))
-##
-##
-##                except:
-##                    print ("Unable to connect: ", ibm_db.conn_errormsg() )
-##
-##                ibm_db.close(conn)
-##                print ("Connection closed")
+                while ibm_db.fetch_row(selectStmt) != False:
+                    print ("Sent to: ID:",  ibm_db.result(selectStmt, 0), " @username:",  ibm_db.result(selectStmt, "USERNAME"))
+                    bot.send_message(ibm_db.result(selectStmt, 0),mess)
+                    i+=1
+
+                bot.send_message(author_id,"Пользователей, получивших ваше оповещение: {} (включая вас)".format(i))
+                log.info('Разослано пользователям: '+str(i))
+
+
+            except:
+                print ("Unable to connect: ", ibm_db.conn_errormsg())
+
+            ibm_db.close(conn)
+            print ("Connection closed")
 
         else:
-            bot.send_message(message.from_user.id,"Хорошо, не буду")
+            bot.send_message(author_id,"Хорошо, не буду")
 
 
 
