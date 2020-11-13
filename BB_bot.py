@@ -9,7 +9,7 @@ from telebot import types
 
 
 """
-относительно рабочая версия на 13 ноября
+Работающая версия с описанием команд
 кнопками спрашивает, разослать ли
 рассылает всем
 
@@ -39,16 +39,20 @@ def Start_handler(message):
             '\n Incoming message: '+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
             ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
 
-    bot.send_message(message.from_user.id,'Здравствуйте, {}!\n Вы нажали /start'.format(message.chat.first_name))
+    bot.send_message(message.from_user.id,'Здравствуйте, {}!\nВас приветствует бот для оповещения волонтеров Больнички'.format(message.chat.first_name))
+    bot.send_message(message.from_user.id,"Напишите любое сообщение, и вам будет предложено разослать его волонтерам")
+    bot.send_message(message.from_user.id,"Напишите /add, чтобы внести себя в список волонтеров, получающих сообщения")
+    bot.send_message(message.from_user.id,"Не забудьте удалить себя из списка командой /delete, когда передумаете их получать")
+    bot.send_message(message.from_user.id,"Напишите /help, чтобы получить список доступных команд")
+
     print('User {} pressed "/Start" '.format(message.chat.first_name))
 
 
 @bot.message_handler(commands=['help'])
 def Help_handler(message):
-    SadEmoji = u'\U0001F623'
-    bot.send_message(message.from_user.id,
-                    "Буду рад вам помочь, но пока не умею, извините "+SadEmoji)
-
+    bot.send_message(message.from_user.id,"Чтобы внести себя в список рассылки, напишите /add")
+    bot.send_message(message.from_user.id,"Чтобы удалить свое имя из списка рассылки, нажмите /delete")
+    bot.send_message(message.from_user.id,"Чтобы связаться с админом бота, напишите /admin")
 
     print('User {} asked me for help'.format(message.chat.first_name))
 
@@ -84,6 +88,10 @@ def Add_handler(message):
 
     ibm_db.close(conn)
 
+
+@bot.message_handler(commands=['admin'])
+def admin_handler(message):
+    bot.send_message(message.from_user.id,"Админ здесь: @NoWord")
 
 @bot.message_handler(commands=['delete'])
 def delete_handler(message):
