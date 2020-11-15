@@ -6,6 +6,7 @@ from BB_config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver,\
 import ibm_db
 import telebot
 from telebot import types
+import time
 
 
 """
@@ -174,7 +175,7 @@ def get_text_messages(message):
                     bot.send_message(ibm_db.result(selectStmt, 0),mess)
                     i+=1
 
-                bot.send_message(author_id,"Пользователей, получивших ваше оповещение: {} (включая вас)".format(i))
+                bot.send_message(author_id,"Пользователей, получивших ваше оповещение: {} ".format(i))
                 log.info('Разослано пользователям: '+str(i))
 
 
@@ -188,5 +189,11 @@ def get_text_messages(message):
             bot.send_message(author_id,"Хорошо, не буду")
 
 
+def start_working():
+    try:
+        bot.polling(none_stop=True,interval=0)
+    except:
+        time.sleep(10)
+        start_working()
 
-bot.polling(none_stop=True,interval=0)
+start_working()

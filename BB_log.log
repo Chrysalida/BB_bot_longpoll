@@ -590,3 +590,324 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 11.13.2020 15:45:42 goodbye ('127.0.0.1', 6388)
 11.13.2020 15:45:42 listener closed
 11.13.2020 15:45:42 server has terminated
+11.13.2020 15:54:52 
+ Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.13.2020 15:57:57 goodbye ('127.0.0.1', 6722)
+11.13.2020 15:57:57 listener closed
+11.13.2020 15:57:57 server has terminated
+11.13.2020 16:00:33 goodbye ('127.0.0.1', 6789)
+11.13.2020 16:00:33 listener closed
+11.13.2020 16:00:33 server has terminated
+11.13.2020 16:00:53 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 16:00:53 Incoming message: Ffh from: ID 591342003 Kathy @NoWord
+11.13.2020 16:00:56 Разослано пользователям: 3
+11.13.2020 16:01:13 goodbye ('127.0.0.1', 6809)
+11.13.2020 16:01:13 listener closed
+11.13.2020 16:01:13 server has terminated
+11.13.2020 16:01:16 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 16:01:16 Incoming message: So from: ID 591342003 Kathy @NoWord
+11.13.2020 16:01:19 Разослано пользователям: 3
+11.13.2020 16:01:31 Разослано пользователям: 3
+11.13.2020 17:02:15 
+ Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.13.2020 17:04:46 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 17:04:46 Incoming message: Ай яй яй я дома!!!!!!! from: ID 362294998 aksel @Akselept
+11.13.2020 17:04:51 Разослано пользователям: 3
+11.13.2020 17:14:40 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 17:14:44 Разослано пользователям: 3
+11.13.2020 17:14:58 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 17:14:58 Incoming message: ) from: ID 362294998 aksel @Akselept
+11.13.2020 17:15:00 Разослано пользователям: 3
+11.13.2020 18:07:14 
+ Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.13.2020 18:25:30 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 18:25:30 Incoming message: Проверка from: ID 591342003 Kathy @NoWord
+11.13.2020 18:25:34 Разослано пользователям: 3
+11.13.2020 18:25:55 
+ Incoming message: /start from: ID 1036923569 Vika @None
+11.13.2020 18:33:12 
+ Incoming message: /start from: ID 261599388 Саша @Venenate
+11.13.2020 18:33:14 User tries to add his name into the DB: /addID 261599388 @Venenate Саша
+11.13.2020 18:33:15 Data inserted: User 261599388 @Venenate Саша
+11.13.2020 18:37:28 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 18:37:31 Разослано пользователям: 4
+11.13.2020 18:37:42 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 18:37:42 Incoming message: Проверка связи from: ID 591342003 Kathy @NoWord
+11.13.2020 18:37:44 Разослано пользователям: 4
+11.13.2020 19:37:54 
+ Incoming message: /start from: ID 495620124 Helen @Vaksena
+11.13.2020 19:38:14 User tries to add his name into the DB: /addID 495620124 @Vaksena Helen
+11.13.2020 19:38:15 Data inserted: User 495620124 @Vaksena Helen
+11.13.2020 19:41:41 
+ Incoming message: /start from: ID 459708252 Sofia @None
+11.13.2020 19:42:02 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 19:42:02 Incoming message: add from: ID 459708252 Sofia @None
+11.13.2020 21:08:15 
+ Incoming message: /start from: ID 1393084583 Knapsberg @None
+11.13.2020 21:08:37 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 21:08:37 Incoming message: add from: ID 1393084583 Knapsberg @None
+11.13.2020 21:08:50 User tries to add his name into the DB: /addID 1393084583 @None Knapsberg
+11.13.2020 21:08:51 Data inserted: User 1393084583 @None Knapsberg
+11.13.2020 21:08:58 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.13.2020 23:05:47 
+ Incoming message: /start from: ID 442741981 Daria @None
+11.13.2020 23:06:08 User tries to add his name into the DB: /addID 442741981 @None Daria
+11.13.2020 23:06:09 Data inserted: User 442741981 @None Daria
+11.14.2020 01:36:04 
+ Incoming message: /start from: ID 521817261 Анастасия @yellsub
+11.14.2020 01:36:16 User tries to add his name into the DB: /addID 521817261 @yellsub Анастасия
+11.14.2020 01:36:17 Data inserted: User 521817261 @yellsub Анастасия
+11.14.2020 05:00:31 ReadTimeout occurred, args=(ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)"),)
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Program Files (x86)\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\util\retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\util.py", line 69, in run
+    task(*args, **kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\__init__.py", line 285, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\__init__.py", line 255, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\apihelper.py", line 241, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\apihelper.py", line 102, in _make_request
+    result = _get_req_session().request(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+11.14.2020 08:16:19 
+ Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.14.2020 18:10:40 
+ Incoming message: /start from: ID 113995640 Sergey @MDIevkov
+11.14.2020 18:10:53 User tries to add his name into the DB: /addID 113995640 @MDIevkov Sergey
+11.14.2020 18:10:54 Data inserted: User 113995640 @MDIevkov Sergey
+11.14.2020 18:11:19 
+_ _ _ _ _ _ _ _ _ _ _ _ _ INCOMING MESSAGE _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+11.14.2020 18:11:19 Incoming message: Это тестовое сообщение от Дока. from: ID 113995640 Sergey @MDIevkov
+11.14.2020 18:39:47 
+ Incoming message: /start from: ID 373151935 Ah @love_my_memes
+11.15.2020 05:00:29 ReadTimeout occurred, args=(ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)"),)
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Program Files (x86)\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\util\retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\util.py", line 69, in run
+    task(*args, **kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\__init__.py", line 285, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\__init__.py", line 255, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\apihelper.py", line 241, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\apihelper.py", line 102, in _make_request
+    result = _get_req_session().request(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+
+11.15.2020 10:57:37 goodbye ('127.0.0.1', 6822)
+11.15.2020 10:57:37 listener closed
+11.15.2020 10:57:37 server has terminated
+11.15.2020 10:57:46 goodbye ('127.0.0.1', 14696)
+11.15.2020 10:57:46 listener closed
+11.15.2020 10:57:46 server has terminated
+11.15.2020 10:58:12 
+ Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.15.2020 11:01:59 goodbye ('127.0.0.1', 14734)
+11.15.2020 11:01:59 listener closed
+11.15.2020 11:01:59 server has terminated
+11.15.2020 11:02:18 goodbye ('127.0.0.1', 14737)
+11.15.2020 11:02:18 listener closed
+11.15.2020 11:02:18 server has terminated
+11.15.2020 11:02:51 ConnectionError occurred, args=(ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)),)
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Program Files (x86)\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\util\retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\packages\six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Program Files (x86)\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\util.py", line 69, in run
+    task(*args, **kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\__init__.py", line 285, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\__init__.py", line 255, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\apihelper.py", line 241, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\telebot\apihelper.py", line 102, in _make_request
+    result = _get_req_session().request(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\requests\adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+11.15.2020 11:03:25 goodbye ('127.0.0.1', 14740)
+11.15.2020 11:03:25 listener closed
+11.15.2020 11:03:25 server has terminated
+11.15.2020 11:04:47 goodbye ('127.0.0.1', 14763)
+11.15.2020 11:04:47 listener closed
+11.15.2020 11:04:47 server has terminated
+11.15.2020 11:07:27 goodbye ('127.0.0.1', 14810)
+11.15.2020 11:07:27 listener closed
+11.15.2020 11:07:27 server has terminated
+11.15.2020 11:08:28 goodbye ('127.0.0.1', 14827)
+11.15.2020 11:08:28 listener closed
+11.15.2020 11:08:28 server has terminated
+11.15.2020 11:08:51 goodbye ('127.0.0.1', 14848)
+11.15.2020 11:08:51 listener closed
+11.15.2020 11:08:51 server has terminated
+11.15.2020 11:09:02 
+ Incoming message: /start from: ID 591342003 Kathy @NoWord
+11.15.2020 11:09:53 goodbye ('127.0.0.1', 14854)
+11.15.2020 11:09:53 listener closed
+11.15.2020 11:09:53 server has terminated
