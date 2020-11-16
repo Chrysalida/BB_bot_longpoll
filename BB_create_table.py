@@ -1,12 +1,11 @@
-"""THIS IS GENERAL VERSION
+"""
+Just a .py file for manipulating the table remotely: creating a table
 """
 
-from config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, dsn_port, dsn_protocol
+
+from config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, dsn_port, dsn_protocol, TABLENAME
 import ibm_db
 
-
-#To be inserted before every start!
-TABLENAME="BB_table"
 
 #DB credentials, stored in config file
 dsn = (

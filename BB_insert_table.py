@@ -1,12 +1,10 @@
-"""THIS IS GENERAL VERSION
+﻿"""
+Just a .py file for manipulating the table remotely: inserting data into your table
 """
 
-from config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, dsn_port, dsn_protocol
+from config import dsn_hostname, dsn_uid, dsn_pwd, dsn_driver, dsn_database, dsn_port, dsn_protocol,TABLENAME
 import ibm_db
 
-
-#To be inserted before every start!
-TABLENAME="BB_table"
 
 #DB credentials, stored in config file
 dsn = (
@@ -22,18 +20,16 @@ try:
     conn = ibm_db.connect(dsn, "", "")
     print ("Connected to database: ", dsn_database, "as user: ", dsn_uid, "on host: ", dsn_hostname)
 
-#!!! СЮДА ВПИСАТЬ НЕБОЛЬШОЙ СЕЛЕКТ, А ЛУЧШЕ ИНФУ О ТАБЛИЦЕ - ВИДЕТЬ ТИП ДАННЫХ И КОЛОНКИ
+#Table structure from the create_table file
 #'''(id varchar(10) PRIMARY KEY NOT NULL, username VARCHAR (30), name varchar(30), Col3 varchar(30), Col4 varchar(30))"'''
-#'''from_user': {'id': 591342003, 'is_bot': False, 'first_name': 'Kathy', 'username': 'NoWord' '''
 
-    #One row of data:
-    insertQuery = "insert into "+TABLENAME+" values ('591342066','Fiction','Kathy','','')"
+
+    #Insert sigle row of data:
+    insertQuery = "insert into "+TABLENAME+" values ('0000000','Fiction','Kathy','','')"
     insertStmt = ibm_db.exec_immediate(conn, insertQuery)
 
-    #Few rows:
-    ##insertQuery2 = "insert into "+TABLENAME+" values (2, 'Raul', 'Chong', 'Markham','SA'), \
-    ##                                                (3, 'Hima', 'Vasudevan', 'Chicago','US')"
-    ##
+    #Or insert few rows:
+    ##insertQuery2 = "insert into "+TABLENAME+" values ('0000000','Fiction','Kathy','',''), ('0000001','SAMPLE','DANA','','')
     ##insertStmt2 = ibm_db.exec_immediate(conn, insertQuery2)
 
 except:
