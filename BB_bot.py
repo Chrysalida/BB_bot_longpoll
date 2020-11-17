@@ -133,8 +133,9 @@ def get_text_messages(message):
             'Incoming message: '+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
             ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
 
-    print("INCOMING MESSAGE"+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
+    print("INCOMING MESSAGE "+ str(message.text) + ' from: ID '+ str(message.from_user.id) +
             ' ' + str(message.from_user.first_name) + ' @' + str(message.from_user.username ))
+
     #mess=""
     global mess;
     mess = message.text
