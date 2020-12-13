@@ -148,7 +148,7 @@ def get_text_messages(message):
     #Buttons
     keyboard=types.InlineKeyboardMarkup();
     key_yes=types.InlineKeyboardButton(text="Да",callback_data='yes');
-    key_no=types.InlineKeyboardButton(text="Нет",callback_data='no');
+    key_no=types.InlineKeyboardButton(text="Нет",callback_data='no',request_contact=True);
     keyboard.add(key_yes,key_no)
 
 

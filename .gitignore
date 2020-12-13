@@ -4,3 +4,10 @@
 __pycache__
 /test.py
 /data
+/client_secret.json
+/Google_connect.py
+/module1.py
+/small_connect_2_GSheets.py
+/token.pickle
+/versions.txt
+/stuff
